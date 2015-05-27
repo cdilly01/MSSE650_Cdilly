@@ -11,7 +11,8 @@
 @implementation Note
 
 - (NSString *) description {
-    return [NSString stringWithFormat: @"%@",_noteText];
+    return [NSString stringWithFormat: @"%@",
+            _noteText];
 }
 
 @end

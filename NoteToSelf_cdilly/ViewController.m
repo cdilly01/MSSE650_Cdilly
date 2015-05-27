@@ -42,7 +42,7 @@ NoteSvcCache *noteSvc = nil;
     [self.view endEditing:YES];
     NSLog(@"addUpdateNote: entering");
     Note *note = [[Note alloc] init];
-    note.text = [_noteText g];
+    note.noteText = [NSString stringWithFormat:@"%@", _noteText];
     [noteSvc addUpdateNote: note];
     
     [self.notesView reloadData];
