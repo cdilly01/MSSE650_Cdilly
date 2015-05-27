@@ -32,8 +32,9 @@ NoteSvcCache *noteSvc = nil;
 - (IBAction)deleteNote:(id)sender {
     [self.view endEditing:YES];
     NSLog(@"deleteNote: deleting");
-    
-    
+    Note *note = [[Note alloc] init];
+    note.noteText = [NSString stringWithFormat:@"%@", _noteText];
+    [noteSvc deleteNote:note];
     [self.notesView reloadData];
     NSLog(@"deleteNote: note deleted");
 }
@@ -49,4 +50,22 @@ NoteSvcCache *noteSvc = nil;
     NSLog(@"deleteNote: note saved");
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [[noteSvc retrieveAllNotes] count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *simpleTableIdentifier = @"SimpleTableItem";
+    UITableViewCell *cell =
+    [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                      reuseIdentifier:simpleTableIdentifier];
+    }
+    Note *note = [[noteSvc retrieveAllNotes]
+                         objectAtIndex:indexPath.row];
+    cell.textLabel.text = [note description];
+    return cell;
+}
 @end
