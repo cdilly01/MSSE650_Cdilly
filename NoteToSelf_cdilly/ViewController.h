@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
  
+@property (strong, nonatomic) IBOutletCollection(UITextView) NSArray *noteText;
+@property (weak, nonatomic) IBOutlet UITableView *notesView;
+
+- (IBAction)deleteNote:(id)sender;
+- (IBAction)addUpdateNote:(id)sender;
 
 @end
 

@@ -14,6 +14,7 @@
 		E7292D5C1B15798E0056F73C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7292D5B1B15798E0056F73C /* Images.xcassets */; };
 		E7292D5F1B15798E0056F73C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7292D5D1B15798E0056F73C /* LaunchScreen.xib */; };
 		E7292D6B1B15798E0056F73C /* NoteToSelf_cdillyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7292D6A1B15798E0056F73C /* NoteToSelf_cdillyTests.m */; };
+		E7292D771B158B420056F73C /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = E7292D761B158B420056F73C /* Note.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		E7292D641B15798E0056F73C /* NoteToSelf_cdillyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteToSelf_cdillyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7292D691B15798E0056F73C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7292D6A1B15798E0056F73C /* NoteToSelf_cdillyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteToSelf_cdillyTests.m; sourceTree = "<group>"; };
+		E7292D751B158B420056F73C /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		E7292D761B158B420056F73C /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		E7292D4D1B15798E0056F73C /* NoteToSelf_cdilly */ = {
 			isa = PBXGroup;
 			children = (
+				E7292D741B158AEC0056F73C /* Model */,
 				E7292D521B15798E0056F73C /* AppDelegate.h */,
 				E7292D531B15798E0056F73C /* AppDelegate.m */,
 				E7292D551B15798E0056F73C /* ViewController.h */,
@@ -117,6 +121,15 @@
 				E7292D691B15798E0056F73C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E7292D741B158AEC0056F73C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E7292D751B158B420056F73C /* Note.h */,
+				E7292D761B158B420056F73C /* Note.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 				E7292D571B15798E0056F73C /* ViewController.m in Sources */,
 				E7292D541B15798E0056F73C /* AppDelegate.m in Sources */,
 				E7292D511B15798E0056F73C /* main.m in Sources */,
+				E7292D771B158B420056F73C /* Note.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
