@@ -15,6 +15,7 @@
 		E7292D5F1B15798E0056F73C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7292D5D1B15798E0056F73C /* LaunchScreen.xib */; };
 		E7292D6B1B15798E0056F73C /* NoteToSelf_cdillyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7292D6A1B15798E0056F73C /* NoteToSelf_cdillyTests.m */; };
 		E7292D771B158B420056F73C /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = E7292D761B158B420056F73C /* Note.m */; };
+		E7292D7E1B1592100056F73C /* NoteSvcCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E7292D7D1B1592100056F73C /* NoteSvcCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,9 @@
 		E7292D6A1B15798E0056F73C /* NoteToSelf_cdillyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteToSelf_cdillyTests.m; sourceTree = "<group>"; };
 		E7292D751B158B420056F73C /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
 		E7292D761B158B420056F73C /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		E7292D7B1B158FF00056F73C /* NoteSvc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteSvc.h; sourceTree = "<group>"; };
+		E7292D7C1B1590F40056F73C /* NoteSvcCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteSvcCache.h; sourceTree = "<group>"; };
+		E7292D7D1B1592100056F73C /* NoteSvcCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteSvcCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,9 @@
 			children = (
 				E7292D751B158B420056F73C /* Note.h */,
 				E7292D761B158B420056F73C /* Note.m */,
+				E7292D7B1B158FF00056F73C /* NoteSvc.h */,
+				E7292D7C1B1590F40056F73C /* NoteSvcCache.h */,
+				E7292D7D1B1592100056F73C /* NoteSvcCache.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -233,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7292D571B15798E0056F73C /* ViewController.m in Sources */,
+				E7292D7E1B1592100056F73C /* NoteSvcCache.m in Sources */,
 				E7292D541B15798E0056F73C /* AppDelegate.m in Sources */,
 				E7292D511B15798E0056F73C /* main.m in Sources */,
 				E7292D771B158B420056F73C /* Note.m in Sources */,
