@@ -23,7 +23,7 @@ NSMutableArray *notes = nil;
 - (Note *) addUpdateNote: (Note *) note {
     NSUInteger index = [notes indexOfObject: note ];
     
-    if (index == nil) {
+    if (index == NSNotFound) {
         [notes addObject: note];
     }
     else {
@@ -40,5 +40,8 @@ NSMutableArray *notes = nil;
     return NULL;
 }
 
+- (NSMutableArray *) retrieveAllNotes {
+    return notes;
+}
 
 @end

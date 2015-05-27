@@ -13,5 +13,6 @@
 
 -(Note *) addUpdateNote: (Note *) note;
 -(Note *) deleteNote: (Note *) note;
+-(NSMutableArray *) retrieveAllNotes;
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "Note.h"
+#import "NoteSvcCache.h"
 
 @interface ViewController ()
 
@@ -14,9 +16,12 @@
 
 @implementation ViewController
 
+NoteSvcCache *noteSvc = nil;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    noteSvc = [[NoteSvcCache alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,6 +41,9 @@
 - (IBAction)addUpdateNote:(id)sender {
     [self.view endEditing:YES];
     NSLog(@"addUpdateNote: entering");
+    Note *note = [[Note alloc] init];
+    note.text = [_noteText g];
+    [noteSvc addUpdateNote: note];
     
     [self.notesView reloadData];
     NSLog(@"deleteNote: note saved");

@@ -10,6 +10,6 @@
 
 @interface Note : NSObject <NSCoding>
 
-@property (nonatomic, strong) NSString *text;
+@property (nonatomic, strong) NSString *noteText;
 
 @end
