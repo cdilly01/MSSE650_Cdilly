@@ -47,7 +47,7 @@ NoteSvcCache *noteSvc = nil;
     [noteSvc addUpdateNote: note];
     
     [self.notesView reloadData];
-    NSLog(@"deleteNote: note saved");
+    NSLog(@"addUpdateNote: note saved");
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
