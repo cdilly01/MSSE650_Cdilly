@@ -32,28 +32,34 @@ NoteSvcCache *noteSvc = nil;
 - (IBAction)deleteNote:(id)sender {
     [self.view endEditing:YES];
     NSLog(@"deleteNote: deleting");
+    
     Note *note = [[Note alloc] init];
-    note.noteText = [NSString stringWithFormat:@"%@", _noteText];
-    [noteSvc deleteNote:note];
-    [self.notesView reloadData];
+    //note.textView = [NSString stringWithFormat:@"%@", _note.text]; maybe get this to work?
+    note.noteText = _note.text;
+    [noteSvc deleteNote: note];
+    
+    [self.notesTableView reloadData];
     NSLog(@"deleteNote: note deleted");
 }
 
 - (IBAction)addUpdateNote:(id)sender {
     [self.view endEditing:YES];
     NSLog(@"addUpdateNote: entering");
+    
     Note *note = [[Note alloc] init];
-    note.noteText = [NSString stringWithFormat:@"%@", _noteText];
+    note.noteText = _note.text;
     [noteSvc addUpdateNote: note];
     
-    [self.notesView reloadData];
+    [self.notesTableView reloadData];
     NSLog(@"addUpdateNote: note saved");
 }
 
+// return the note count
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [[noteSvc retrieveAllNotes] count];
 }
 
+// get index for a particular row
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *simpleTableIdentifier = @"SimpleTableItem";
     UITableViewCell *cell =

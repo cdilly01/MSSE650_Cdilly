@@ -17,12 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" text="Enter a note text here of click a note from the list below to edit..." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PDU-HC-H0i">
-                                <rect key="frame" x="180" y="94" width="240" height="166"/>
-                                <color key="backgroundColor" red="0.94117653369903564" green="0.91372555494308472" blue="0.7568628191947937" alpha="1" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgy-Dp-fm9">
                                 <rect key="frame" x="180" y="268" width="118" height="30"/>
                                 <color key="backgroundColor" red="0.73725491762161255" green="0.83137261867523193" blue="0.93725496530532837" alpha="1" colorSpace="deviceRGB"/>
@@ -58,12 +52,18 @@
                                 <color key="sectionIndexColor" red="0.011764707043766975" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                             </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="note" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jgq-Tu-UhU">
+                                <rect key="frame" x="252" y="159" width="97" height="30"/>
+                                <color key="backgroundColor" red="0.92549026012420654" green="0.89803928136825562" blue="0.61176472902297974" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.011764707043766975" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <connections>
-                        <outlet property="notesView" destination="LKy-Et-brg" id="xHh-7Z-mad"/>
-                        <outletCollection property="noteText" destination="PDU-HC-H0i" id="wIe-ZB-jAi"/>
+                        <outlet property="note" destination="Jgq-Tu-UhU" id="UJf-1W-XLH"/>
+                        <outlet property="notesTableView" destination="LKy-Et-brg" id="hjE-td-XG9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

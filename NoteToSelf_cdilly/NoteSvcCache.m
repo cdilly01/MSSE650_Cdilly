@@ -20,14 +20,15 @@ NSMutableArray *notes = nil;
     return nil;
 }
 
+
 - (Note *) addUpdateNote: (Note *) note {
-    NSUInteger index = [notes indexOfObject: note ];
-    
-    if (index == NSNotFound) {
+    if ([notes containsObject:note]){
+        NSUInteger index = [notes indexOfObject: note ];
+        [notes removeObjectAtIndex: index];
         [notes addObject: note];
     }
-    else {
-        [notes removeObjectAtIndex: index];
+    
+    else{
         [notes addObject: note];
     }
     
@@ -35,9 +36,11 @@ NSMutableArray *notes = nil;
 }
 
 - (Note *) deleteNote:(Note *)note {
-    NSUInteger index = [notes indexOfObject: note ];
-    [notes removeObjectAtIndex: index];
-    return NULL;
+    if ([notes containsObject:note.noteText]){
+        NSUInteger index = [notes indexOfObject: note ];
+        [notes removeObjectAtIndex: index];
+    }
+    return note;
 }
 
 - (NSMutableArray *) retrieveAllNotes {

@@ -10,8 +10,9 @@
 
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
  
-@property (weak, nonatomic) IBOutlet UITableView *notesView;
-@property (strong, nonatomic) IBOutletCollection(UITextView) NSArray *noteText;
+@property (weak, nonatomic) IBOutlet UITableView *notesTableView;
+//@property (strong, nonatomic) IBOutletCollection(UITextView) NSArray *textView;
+@property (weak, nonatomic) IBOutlet UITextField *note;
 
 - (IBAction)deleteNote:(id)sender;
 - (IBAction)addUpdateNote:(id)sender;
