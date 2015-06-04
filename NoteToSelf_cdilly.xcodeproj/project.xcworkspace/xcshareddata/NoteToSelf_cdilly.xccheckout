@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>949F419B-85ED-4CA1-B0D2-67621D230766</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NoteToSelf_cdilly</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>641FCA81258ED8C20DC35EF0329BAEE231406789</key>
+		<string>https://github.com/cdilly01/MSSE650_Cdilly</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NoteToSelf_cdilly.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>641FCA81258ED8C20DC35EF0329BAEE231406789</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/cdilly01/MSSE650_Cdilly</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>641FCA81258ED8C20DC35EF0329BAEE231406789</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>641FCA81258ED8C20DC35EF0329BAEE231406789</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NoteToSelf_cdilly</string>
+		</dict>
+	</array>
+</dict>
+</plist>
