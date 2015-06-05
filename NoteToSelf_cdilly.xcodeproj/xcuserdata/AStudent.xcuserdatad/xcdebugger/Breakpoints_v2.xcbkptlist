@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NoteToSelf_cdilly/NoteSvcCache.m"
-            timestampString = "455088333.432834"
+            timestampString = "455177140.297815"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "-addUpdateNote:"
             landmarkType = "5">
          </BreakpointContent>
