@@ -63,7 +63,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgy-Dp-fm9">
@@ -110,6 +110,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.011764707043766975" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="800"/>
                     <connections>
                         <outlet property="note" destination="Jgq-Tu-UhU" id="UJf-1W-XLH"/>
                         <outlet property="notesTableView" destination="LKy-Et-brg" id="hjE-td-XG9"/>
@@ -127,7 +129,7 @@
                         <viewControllerLayoutGuide type="bottom" id="8NR-j1-gt5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="NLY-1I-AAJ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Note To Self" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccD-Ko-3oQ">
@@ -149,19 +151,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="presentation" id="KT2-NT-3R2"/>
+                                    <segue destination="AQq-ge-wg4" kind="presentation" id="b9W-sa-eKO"/>
                                 </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="800"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UIG-SH-ea3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1322" y="286"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="KT2-NT-3R2"/>
-    </inferredMetricsTieBreakers>
 </document>
